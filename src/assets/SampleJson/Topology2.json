@@ -1,0 +1,138 @@
+{
+  "networkType": "5G",
+  "networkId": "5g-radionetwork-1",
+  "topology": [
+    {
+      "device": {
+        "type": "cucp",
+        "attributes": {
+          "latitude": "18.5425",
+          "longitude": "73.7594",
+          "gnbId": "1001",
+          "pLMNId": "404010",
+          "cucpid": "1001",
+          "cucpname": "cucpserver1",
+          "userDefinedState": "ACTIVE",
+          "vendorName": "STL",
+          "xnConnections": [
+            "1002"
+          ]
+        }
+      }
+    },
+    {
+      "device": {
+        "type": "cucp",
+        "attributes": {
+          "latitude": "18.3511",
+          "longitude": "73.9240",
+          "gnbId": "1002",
+          "pLMNId": "404010",
+          "cucpid": "1002",
+          "cucpname": "cucpserver2",
+          "userDefinedState": "ACTIVE",
+          "vendorName": "STL-Optical",
+          "xnConnections": [
+            "1001"
+          ]
+        }
+      }
+    },
+    {
+      "device": {
+        "type": "cuup",
+        "attributes": {
+          "latitude": "18.5820",
+          "longitude": "74.0197",
+          "gnbId": "1001",
+          "cuupid": "20001",
+          "userDefinedState": "ACTIVE",
+          "vendorName": "STL-Access"
+        }
+      }
+    },
+    {
+      "device": {
+        "type": "du",
+        "attributes": {
+          "latitude": "18.6241",
+          "longitude": "73.6803",
+          "gnbId": "1001",
+          "duid": "30001",
+          "duname": "duserver1",
+          "userDefinedState": "ACTIVE",
+          "vendorName": "STL-Radio",
+          "cuups": [
+            "20001"
+          ],
+          "cells": [
+            {
+              "cellId": "40401016400385",
+              "cellName": "STL010_A1",
+              "localId": "1",
+              "pci": "1",
+              "latitude": "18.6004",
+              "longitude": "73.5821",
+              "cellState": "ACTIVE",
+              "operationalState": "ENABLED",
+              "administrativeState": "UNLOCKED",
+              "arfcnDL": "1000",
+              "arfcnUL": "100",
+              "cesSwitch": "ON",
+              "cellAzimuth": "120",
+              "energySavingState": "isEnergySaving",
+              "energySavingControl": "toBeNotEnergySaving",
+              "bsChannelBwDL": "200",
+              "isCoverageCell": "yes",
+              "neighbours": [
+                {
+                  "cellId": "40401016400386",
+                  "adjacentNRCellRef": "STL010_A2",
+                  "relationId": "1",
+                  "gnbId": "1001",
+                  "pci": "2",
+                  "localId": "2",
+                  "isHOAllowed": "true",
+                  "isRemoveAllowed": "true",
+                  "isESCoveredBy": "FULL"
+                }
+              ]
+            },
+            {
+              "cellId": "40401016400386",
+              "cellName": "STL010_B1",
+              "localId": "2",
+              "pci": "2",
+              "latitude": "18.6392",
+              "longitude": "73.5958",
+              "cellState": "ACTIVE",
+              "operationalState": "ENABLED",
+              "administrativeState": "UNLOCKED",
+              "arfcnDL": "1050",
+              "arfcnUL": "110",
+              "cesSwitch": "ON",
+              "cellAzimuth": "0",
+              "energySavingState": "isEnergySaving",
+              "energySavingControl": "toBeNotEnergySaving",
+              "bsChannelBwDL": "200",
+              "isCoverageCell": "yes",
+              "neighbours": [
+                {
+                  "cellId": "40401016400385",
+                  "adjacentNRCellRef": "STL010_B2",
+                  "relationId": "2",
+                  "gnbId": "1001",
+                  "pci": "1",
+                  "localId": "1",
+                  "isHOAllowed": "true",
+                  "isRemoveAllowed": "true",
+                  "isESCoveredBy": "FULL"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

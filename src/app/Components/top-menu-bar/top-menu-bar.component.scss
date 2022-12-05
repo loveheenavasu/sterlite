@@ -1,0 +1,39 @@
+.side-bar{
+  height: 15%;
+  padding: 12px;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11212f;
+
+  a {
+      height: fit-content;
+  }
+}
+
+// // /* Chrome, Safari, Edge, Opera */
+// input::-webkit-outer-spin-button,
+// input::-webkit-inner-spin-button {
+//   -webkit-appearance: none;
+//   margin: 0;
+// }
+
+// /* Firefox */
+// input[type=number] {
+//   -moz-appearance: textfield;
+// }
+
+
+.logo-img {
+  height: 90%;
+  width: 25%;
+  margin-left: 90%;
+  // align-items: right;
+  // display: inline-block;
+  // vertical-align: middle;
+  // background: url('./../../../assets/Images/sterlite-logo-seeklogo.com.png') no-repeat center center;
+  // background-size: cover;
+  // margin-left: 40%;
+}

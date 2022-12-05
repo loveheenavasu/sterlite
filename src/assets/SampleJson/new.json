@@ -1,0 +1,1931 @@
+{"took":1,"timed_out":false,"_shards":{"total":1,"successful":1,"skipped":0,"failed":0},"hits":{"total":{"value":1,"relation":"eq"},"max_score":1.0,"hits":[{"_index":"5g-radio-network-1","_type":"_doc","_id":"1","_score":1.0,"_source":{
+	"networkType": "5G",
+	"networkId": "5g-radio-network-1",
+	"topology": [{
+			"device": {
+				"type": "cucp",
+				"attributes": {
+					"latitude": "18.5425",
+					"longitude": "73.7594",
+					"gnbID": "1001",
+					"pLMNId": "404010",
+					"CUCPID": "10001",
+					"CUCPName": "cucpserver1",
+					"userDefinedState": "ACTIVE",
+					"vendorName": "STL-Optical",
+					"xnConnections": []
+				}
+			}
+		},
+		{
+			"device": {
+				"type": "cucp",
+				"attributes": {
+					"latitude": "18.3511",
+					"longitude": "73.9240",
+					"gnbID": "1002",
+					"pLMNId": "404010",
+					"CUCPID": "10002",
+					"CUCPName": "cucpserver2",
+					"userDefinedState": "ACTIVE",
+					"vendorName": "STL-Optical",
+					"xnConnections": [
+						"1001"
+					]
+				}
+			}
+		},
+		{
+			"device": {
+				"type": "cuup",
+				"latitude": "18.5820",
+				"longitude": "74.0197",
+				"gnbID": "1001",
+				"CUUPID": "20001",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Optical"
+			}
+		},
+		{
+			"device": {
+				"type": "cuup",
+				"latitude": "18.3867",
+				"longitude": "73.6692",
+				"gnbID": "1002",
+				"CUUPID": "20002",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Radio"
+			}
+		},
+		{
+			"device": {
+				"type": "du",
+				"latitude": "18.6241",
+				"longitude": "73.6803",
+				"gnbID": "1001",
+				"DUID": "30001",
+				"DUName": "duserver1",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Radio",
+				"CUUPS": [
+					"20001"
+				],
+				"cells": [{
+						"localID": "1",
+						"pci": "1",
+						"latitude": "18.6004",
+						"longitude": "73.5821",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "1",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "2",
+								"gnbID": "1001",
+								"pci": "9",
+								"cellLocalId": "9",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "3",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "4",
+								"gnbID": "1001",
+								"pci": "2",
+								"cellLocalId": "2",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "5",
+								"gnbID": "1001",
+								"pci": "7",
+								"cellLocalId": "7",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "6",
+								"gnbID": "1001",
+								"pci": "8",
+								"cellLocalId": "8",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "7",
+								"gnbID": "1001",
+								"pci": "10",
+								"cellLocalId": "10",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "2",
+						"pci": "2",
+						"latitude": "18.5610",
+						"longitude": "73.5839",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "8",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "9",
+								"gnbID": "1001",
+								"pci": "5",
+								"cellLocalId": "5",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "10",
+								"gnbID": "1001",
+								"pci": "8",
+								"cellLocalId": "8",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "3",
+						"pci": "3",
+						"latitude": "18.6044",
+						"longitude": "73.5669",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "11",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "12",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "13",
+								"gnbID": "1001",
+								"pci": "5",
+								"cellLocalId": "5",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "4",
+						"pci": "4",
+						"latitude": "18.6707",
+						"longitude": "73.5983",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "14",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "15",
+								"gnbID": "1001",
+								"pci": "3",
+								"cellLocalId": "3",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "16",
+								"gnbID": "1001",
+								"pci": "8",
+								"cellLocalId": "8",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "17",
+								"gnbID": "1001",
+								"pci": "7",
+								"cellLocalId": "7",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "18",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "19",
+								"gnbID": "1001",
+								"pci": "10",
+								"cellLocalId": "10",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "20",
+								"gnbID": "1001",
+								"pci": "9",
+								"cellLocalId": "9",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "5",
+						"pci": "5",
+						"latitude": "18.7421",
+						"longitude": "73.5653",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "21",
+								"gnbID": "1001",
+								"pci": "2",
+								"cellLocalId": "2",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "22",
+								"gnbID": "1001",
+								"pci": "3",
+								"cellLocalId": "3",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "6",
+						"pci": "6",
+						"latitude": "18.8375",
+						"longitude": "73.6229",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "23",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "24",
+								"gnbID": "1001",
+								"pci": "10",
+								"cellLocalId": "10",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "25",
+								"gnbID": "1001",
+								"pci": "3",
+								"cellLocalId": "3",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "26",
+								"gnbID": "1001",
+								"pci": "9",
+								"cellLocalId": "9",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "27",
+								"gnbID": "1001",
+								"pci": "8",
+								"cellLocalId": "8",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "28",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "7",
+						"pci": "7",
+						"latitude": "18.7850",
+						"longitude": "73.5241",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "29",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "30",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "8",
+						"pci": "8",
+						"latitude": "18.7053",
+						"longitude": "73.4541",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "31",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "32",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "33",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "34",
+								"gnbID": "1001",
+								"pci": "10",
+								"cellLocalId": "10",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "35",
+								"gnbID": "1001",
+								"pci": "2",
+								"cellLocalId": "2",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "9",
+						"pci": "9",
+						"latitude": "18.6994",
+						"longitude": "73.4993",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "36",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "37",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "38",
+								"gnbID": "1001",
+								"pci": "10",
+								"cellLocalId": "10",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "39",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "10",
+						"pci": "10",
+						"latitude": "18.6276",
+						"longitude": "73.4985",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "40",
+								"gnbID": "1001",
+								"pci": "6",
+								"cellLocalId": "6",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "41",
+								"gnbID": "1001",
+								"pci": "9",
+								"cellLocalId": "9",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "42",
+								"gnbID": "1001",
+								"pci": "8",
+								"cellLocalId": "8",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "43",
+								"gnbID": "1001",
+								"pci": "4",
+								"cellLocalId": "4",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "44",
+								"gnbID": "1001",
+								"pci": "1",
+								"cellLocalId": "1",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"device": {
+				"type": "du",
+				"latitude": "18.5690",
+				"longitude": "73.8684",
+				"gnbID": "1002",
+				"DUID": "30002",
+				"DUName": "duserver2",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Optical",
+				"CUUPS": [
+					"20002"
+				],
+				"cells": [{
+						"localID": "11",
+						"pci": "11",
+						"latitude": "18.5540",
+						"longitude": "73.9656",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "45",
+								"gnbID": "1002",
+								"pci": "18",
+								"cellLocalId": "18",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "46",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "47",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "12",
+						"pci": "12",
+						"latitude": "18.5724",
+						"longitude": "74.0382",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "48",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "49",
+								"gnbID": "1002",
+								"pci": "19",
+								"cellLocalId": "19",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "50",
+								"gnbID": "1002",
+								"pci": "14",
+								"cellLocalId": "14",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "51",
+								"gnbID": "1002",
+								"pci": "17",
+								"cellLocalId": "17",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "52",
+								"gnbID": "1002",
+								"pci": "16",
+								"cellLocalId": "16",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "13",
+						"pci": "13",
+						"latitude": "18.5450",
+						"longitude": "73.9676",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "53",
+								"gnbID": "1002",
+								"pci": "17",
+								"cellLocalId": "17",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "54",
+								"gnbID": "1002",
+								"pci": "16",
+								"cellLocalId": "16",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "55",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "56",
+								"gnbID": "1002",
+								"pci": "15",
+								"cellLocalId": "15",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "57",
+								"gnbID": "1002",
+								"pci": "14",
+								"cellLocalId": "14",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "58",
+								"gnbID": "1002",
+								"pci": "11",
+								"cellLocalId": "11",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "14",
+						"pci": "14",
+						"latitude": "18.6343",
+						"longitude": "73.9715",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "59",
+								"gnbID": "1002",
+								"pci": "12",
+								"cellLocalId": "12",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "60",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "61",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "15",
+						"pci": "15",
+						"latitude": "18.6518",
+						"longitude": "73.8936",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "62",
+								"gnbID": "1002",
+								"pci": "17",
+								"cellLocalId": "17",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "63",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "64",
+								"gnbID": "1002",
+								"pci": "16",
+								"cellLocalId": "16",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "65",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "16",
+						"pci": "16",
+						"latitude": "18.5666",
+						"longitude": "73.9835",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "66",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "67",
+								"gnbID": "1002",
+								"pci": "18",
+								"cellLocalId": "18",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "68",
+								"gnbID": "1002",
+								"pci": "12",
+								"cellLocalId": "12",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "69",
+								"gnbID": "1002",
+								"pci": "15",
+								"cellLocalId": "15",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "70",
+								"gnbID": "1002",
+								"pci": "17",
+								"cellLocalId": "17",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "17",
+						"pci": "17",
+						"latitude": "18.6136",
+						"longitude": "74.0365",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "71",
+								"gnbID": "1002",
+								"pci": "15",
+								"cellLocalId": "15",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "72",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "73",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "74",
+								"gnbID": "1002",
+								"pci": "12",
+								"cellLocalId": "12",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "75",
+								"gnbID": "1002",
+								"pci": "16",
+								"cellLocalId": "16",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "18",
+						"pci": "18",
+						"latitude": "18.6203",
+						"longitude": "74.0743",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "76",
+								"gnbID": "1002",
+								"pci": "11",
+								"cellLocalId": "11",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "77",
+								"gnbID": "1002",
+								"pci": "20",
+								"cellLocalId": "20",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "78",
+								"gnbID": "1002",
+								"pci": "19",
+								"cellLocalId": "19",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "79",
+								"gnbID": "1002",
+								"pci": "16",
+								"cellLocalId": "16",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "19",
+						"pci": "19",
+						"latitude": "18.6201",
+						"longitude": "74.0150",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "80",
+								"gnbID": "1002",
+								"pci": "12",
+								"cellLocalId": "12",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "81",
+								"gnbID": "1002",
+								"pci": "18",
+								"cellLocalId": "18",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "20",
+						"pci": "20",
+						"latitude": "18.7055",
+						"longitude": "74.0344",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "82",
+								"gnbID": "1002",
+								"pci": "12",
+								"cellLocalId": "12",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "83",
+								"gnbID": "1002",
+								"pci": "18",
+								"cellLocalId": "18",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "84",
+								"gnbID": "1002",
+								"pci": "11",
+								"cellLocalId": "11",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "85",
+								"gnbID": "1002",
+								"pci": "13",
+								"cellLocalId": "13",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "86",
+								"gnbID": "1002",
+								"pci": "17",
+								"cellLocalId": "17",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "87",
+								"gnbID": "1002",
+								"pci": "14",
+								"cellLocalId": "14",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "88",
+								"gnbID": "1002",
+								"pci": "15",
+								"cellLocalId": "15",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"device": {
+				"type": "du",
+				"latitude": "18.4490",
+				"longitude": "74.0186",
+				"gnbID": "1001",
+				"DUID": "30003",
+				"DUName": "duserver3",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Optical",
+				"CUUPS": [],
+				"cells": [{
+						"localID": "21",
+						"pci": "21",
+						"latitude": "18.3881",
+						"longitude": "74.0315",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "89",
+								"gnbID": "1001",
+								"pci": "23",
+								"cellLocalId": "23",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "90",
+								"gnbID": "1001",
+								"pci": "29",
+								"cellLocalId": "29",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "91",
+								"gnbID": "1001",
+								"pci": "27",
+								"cellLocalId": "27",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "92",
+								"gnbID": "1001",
+								"pci": "28",
+								"cellLocalId": "28",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "93",
+								"gnbID": "1001",
+								"pci": "30",
+								"cellLocalId": "30",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "22",
+						"pci": "22",
+						"latitude": "18.3490",
+						"longitude": "73.9857",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "94",
+								"gnbID": "1001",
+								"pci": "25",
+								"cellLocalId": "25",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "95",
+								"gnbID": "1001",
+								"pci": "30",
+								"cellLocalId": "30",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "96",
+								"gnbID": "1001",
+								"pci": "28",
+								"cellLocalId": "28",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "97",
+								"gnbID": "1001",
+								"pci": "29",
+								"cellLocalId": "29",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "23",
+						"pci": "23",
+						"latitude": "18.2684",
+						"longitude": "74.0343",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "98",
+								"gnbID": "1001",
+								"pci": "21",
+								"cellLocalId": "21",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "99",
+								"gnbID": "1001",
+								"pci": "26",
+								"cellLocalId": "26",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "100",
+								"gnbID": "1001",
+								"pci": "25",
+								"cellLocalId": "25",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "101",
+								"gnbID": "1001",
+								"pci": "29",
+								"cellLocalId": "29",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "102",
+								"gnbID": "1001",
+								"pci": "28",
+								"cellLocalId": "28",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "24",
+						"pci": "24",
+						"latitude": "18.3115",
+						"longitude": "74.1082",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "103",
+								"gnbID": "1001",
+								"pci": "30",
+								"cellLocalId": "30",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "104",
+								"gnbID": "1001",
+								"pci": "27",
+								"cellLocalId": "27",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "25",
+						"pci": "25",
+						"latitude": "18.2251",
+						"longitude": "74.0898",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "105",
+								"gnbID": "1001",
+								"pci": "22",
+								"cellLocalId": "22",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "106",
+								"gnbID": "1001",
+								"pci": "26",
+								"cellLocalId": "26",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "107",
+								"gnbID": "1001",
+								"pci": "23",
+								"cellLocalId": "23",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "108",
+								"gnbID": "1001",
+								"pci": "28",
+								"cellLocalId": "28",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "26",
+						"pci": "26",
+						"latitude": "18.1321",
+						"longitude": "74.1506",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "109",
+								"gnbID": "1001",
+								"pci": "25",
+								"cellLocalId": "25",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "110",
+								"gnbID": "1001",
+								"pci": "23",
+								"cellLocalId": "23",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "111",
+								"gnbID": "1001",
+								"pci": "27",
+								"cellLocalId": "27",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "112",
+								"gnbID": "1001",
+								"pci": "28",
+								"cellLocalId": "28",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "27",
+						"pci": "27",
+						"latitude": "18.1043",
+						"longitude": "74.1002",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "113",
+								"gnbID": "1001",
+								"pci": "30",
+								"cellLocalId": "30",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "114",
+								"gnbID": "1001",
+								"pci": "21",
+								"cellLocalId": "21",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "115",
+								"gnbID": "1001",
+								"pci": "24",
+								"cellLocalId": "24",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "116",
+								"gnbID": "1001",
+								"pci": "29",
+								"cellLocalId": "29",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "117",
+								"gnbID": "1001",
+								"pci": "26",
+								"cellLocalId": "26",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "28",
+						"pci": "28",
+						"latitude": "18.0058",
+						"longitude": "74.1410",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "118",
+								"gnbID": "1001",
+								"pci": "22",
+								"cellLocalId": "22",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "119",
+								"gnbID": "1001",
+								"pci": "23",
+								"cellLocalId": "23",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "120",
+								"gnbID": "1001",
+								"pci": "26",
+								"cellLocalId": "26",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "121",
+								"gnbID": "1001",
+								"pci": "25",
+								"cellLocalId": "25",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "122",
+								"gnbID": "1001",
+								"pci": "21",
+								"cellLocalId": "21",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "29",
+						"pci": "29",
+						"latitude": "18.0884",
+						"longitude": "74.2270",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "123",
+								"gnbID": "1001",
+								"pci": "21",
+								"cellLocalId": "21",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "124",
+								"gnbID": "1001",
+								"pci": "30",
+								"cellLocalId": "30",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "125",
+								"gnbID": "1001",
+								"pci": "22",
+								"cellLocalId": "22",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "126",
+								"gnbID": "1001",
+								"pci": "23",
+								"cellLocalId": "23",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "127",
+								"gnbID": "1001",
+								"pci": "27",
+								"cellLocalId": "27",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "30",
+						"pci": "30",
+						"latitude": "18.1365",
+						"longitude": "74.3012",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "128",
+								"gnbID": "1001",
+								"pci": "27",
+								"cellLocalId": "27",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "129",
+								"gnbID": "1001",
+								"pci": "24",
+								"cellLocalId": "24",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "130",
+								"gnbID": "1001",
+								"pci": "22",
+								"cellLocalId": "22",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "131",
+								"gnbID": "1001",
+								"pci": "29",
+								"cellLocalId": "29",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "132",
+								"gnbID": "1001",
+								"pci": "21",
+								"cellLocalId": "21",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					}
+				]
+			}
+		},
+		{
+			"device": {
+				"type": "du",
+				"latitude": "18.6202",
+				"longitude": "73.9487",
+				"gnbID": "1002",
+				"DUID": "30004",
+				"DUName": "duserver4",
+				"userDefinedState": "ACTIVE",
+				"vendorName": "STL-Radio",
+				"CUUPS": [
+					"20002"
+				],
+				"cells": [{
+						"localID": "31",
+						"pci": "31",
+						"latitude": "18.6157",
+						"longitude": "73.9838",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "133",
+								"gnbID": "1002",
+								"pci": "35",
+								"cellLocalId": "35",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "134",
+								"gnbID": "1002",
+								"pci": "37",
+								"cellLocalId": "37",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "135",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "136",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "32",
+						"pci": "32",
+						"latitude": "18.5988",
+						"longitude": "74.0520",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "137",
+								"gnbID": "1002",
+								"pci": "40",
+								"cellLocalId": "40",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "138",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "33",
+						"pci": "33",
+						"latitude": "18.5801",
+						"longitude": "74.1215",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "139",
+								"gnbID": "1002",
+								"pci": "31",
+								"cellLocalId": "31",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "140",
+								"gnbID": "1002",
+								"pci": "40",
+								"cellLocalId": "40",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "141",
+								"gnbID": "1002",
+								"pci": "34",
+								"cellLocalId": "34",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "142",
+								"gnbID": "1002",
+								"pci": "35",
+								"cellLocalId": "35",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "143",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "144",
+								"gnbID": "1002",
+								"pci": "32",
+								"cellLocalId": "32",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "34",
+						"pci": "34",
+						"latitude": "18.4804",
+						"longitude": "74.1898",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "145",
+								"gnbID": "1002",
+								"pci": "38",
+								"cellLocalId": "38",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "146",
+								"gnbID": "1002",
+								"pci": "40",
+								"cellLocalId": "40",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "147",
+								"gnbID": "1002",
+								"pci": "35",
+								"cellLocalId": "35",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "148",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "149",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "35",
+						"pci": "35",
+						"latitude": "18.4346",
+						"longitude": "74.2521",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "150",
+								"gnbID": "1002",
+								"pci": "31",
+								"cellLocalId": "31",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "151",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "152",
+								"gnbID": "1002",
+								"pci": "34",
+								"cellLocalId": "34",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "153",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "36",
+						"pci": "36",
+						"latitude": "18.4958",
+						"longitude": "74.2485",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "154",
+								"gnbID": "1002",
+								"pci": "35",
+								"cellLocalId": "35",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "155",
+								"gnbID": "1002",
+								"pci": "37",
+								"cellLocalId": "37",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "156",
+								"gnbID": "1002",
+								"pci": "38",
+								"cellLocalId": "38",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "157",
+								"gnbID": "1002",
+								"pci": "40",
+								"cellLocalId": "40",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "158",
+								"gnbID": "1002",
+								"pci": "34",
+								"cellLocalId": "34",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "159",
+								"gnbID": "1002",
+								"pci": "31",
+								"cellLocalId": "31",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "160",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "37",
+						"pci": "37",
+						"latitude": "18.4479",
+						"longitude": "74.2131",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "161",
+								"gnbID": "1002",
+								"pci": "31",
+								"cellLocalId": "31",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "162",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "163",
+								"gnbID": "1002",
+								"pci": "38",
+								"cellLocalId": "38",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "164",
+								"gnbID": "1002",
+								"pci": "39",
+								"cellLocalId": "39",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "38",
+						"pci": "38",
+						"latitude": "18.4534",
+						"longitude": "74.3117",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "165",
+								"gnbID": "1002",
+								"pci": "34",
+								"cellLocalId": "34",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "166",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "167",
+								"gnbID": "1002",
+								"pci": "37",
+								"cellLocalId": "37",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "168",
+								"gnbID": "1002",
+								"pci": "39",
+								"cellLocalId": "39",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "39",
+						"pci": "39",
+						"latitude": "18.3984",
+						"longitude": "74.2258",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "169",
+								"gnbID": "1002",
+								"pci": "37",
+								"cellLocalId": "37",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "170",
+								"gnbID": "1002",
+								"pci": "38",
+								"cellLocalId": "38",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "171",
+								"gnbID": "1002",
+								"pci": "40",
+								"cellLocalId": "40",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					},
+					{
+						"localID": "40",
+						"pci": "40",
+						"latitude": "18.3243",
+						"longitude": "74.2960",
+						"state": "ACTIVE",
+						"operationalState": "ENABLED",
+						"administrativeState": "UNLOCKED",
+						"neighbours": [{
+								"relationID": "172",
+								"gnbID": "1002",
+								"pci": "36",
+								"cellLocalId": "36",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "173",
+								"gnbID": "1002",
+								"pci": "34",
+								"cellLocalId": "34",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "174",
+								"gnbID": "1002",
+								"pci": "33",
+								"cellLocalId": "33",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "175",
+								"gnbID": "1002",
+								"pci": "32",
+								"cellLocalId": "32",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							},
+							{
+								"relationID": "176",
+								"gnbID": "1002",
+								"pci": "39",
+								"cellLocalId": "39",
+								"isHOAllowed": "true",
+								"isRemoveAllowed": "true"
+							}
+						]
+					}
+				]
+			}
+		}
+	]
+}}]}}

@@ -1,0 +1,2672 @@
+{
+    "networkId": "5g-radio-network-1",
+    "networkType": "5G",
+    "topology": [
+        {
+            "device": {
+                "attributes": {
+                    "cucpname": "STLCUCP01",
+                    "userDefinedState": "ACTIVE",
+                    "cucpid": "1001",
+                    "latitude": "-6.3631",
+                    "gnbId": "1001",
+                    "pLMNId": "404010",
+                    "xnConnections": ["1002"],
+                    "vendorName": "STL-Access",
+                    "longitude": "53.318"
+                },
+                "type": "cucp"
+            }
+        },
+		{
+            "device": {
+                "attributes": {
+                    "cucpname": "STLCUCP02",
+                    "userDefinedState": "ACTIVE",
+                    "cucpid": "1002",
+                    "latitude": "-6.3631",
+                    "gnbId": "1002",
+                    "pLMNId": "404010",
+                    "xnConnections": ["1001"],
+                    "vendorName": "STL-Access",
+                    "longitude": "53.318"
+                },
+                "type": "cucp"
+            }
+        },
+		{
+            "device": {
+                "attributes": {
+                    "cucpname": "STLCUCP03",
+                    "userDefinedState": "ACTIVE",
+                    "cucpid": "1003",
+                    "latitude": "-6.3631",
+                    "gnbId": "1003",
+                    "pLMNId": "404010",
+                    "xnConnections": ["1001"],
+                    "vendorName": "STL-Access",
+                    "longitude": "53.318"
+                },
+                "type": "cucp"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3631",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Access",
+                    "longitude": "53.318",
+                    "cuupid": "10001"
+                },
+                "type": "cuup"
+            }
+        },
+		{
+            "device": {
+                "attributes": {
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3631",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Access",
+                    "longitude": "53.318",
+                    "cuupid": "10002"
+                },
+                "type": "cuup"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL001_A1",
+                            "latitude": "-6.3631",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "3",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B1",
+                                    "relationId": "112",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400387",
+                                    "localId": "3",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "4",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B2",
+                                    "relationId": "113",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400388",
+                                    "localId": "4",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "5",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_C1",
+                                    "relationId": "114",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400389",
+                                    "localId": "5",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400385",
+                            "localId": "1",
+                            "cellAzimuth": "40",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "1",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.318",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL001_B1",
+                            "latitude": "-6.3631",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "1",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_A1",
+                                    "relationId": "121",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400385",
+                                    "localId": "1",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "4",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B2",
+                                    "relationId": "123",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400388",
+                                    "localId": "4",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "5",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_C1",
+                                    "relationId": "124",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400389",
+                                    "localId": "5",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400387",
+                            "localId": "3",
+                            "cellAzimuth": "160",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "3",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.318",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL001_B2",
+                            "latitude": "-6.3631",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "1",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_A1",
+                                    "relationId": "126",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400385",
+                                    "localId": "1",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "3",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B1",
+                                    "relationId": "128",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400387",
+                                    "localId": "3",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "5",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_C1",
+                                    "relationId": "129",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400389",
+                                    "localId": "5",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400388",
+                            "localId": "4",
+                            "cellAzimuth": "160",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "4",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.318",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL001_C1",
+                            "latitude": "-6.3631",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "1",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_A1",
+                                    "relationId": "131",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400385",
+                                    "localId": "1",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "3",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B1",
+                                    "relationId": "133",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400387",
+                                    "localId": "3",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "4",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL001_B2",
+                                    "relationId": "134",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400388",
+                                    "localId": "4",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400389",
+                            "localId": "5",
+                            "cellAzimuth": "280",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "5",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.318",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "101",
+                    "duname": "duserver101",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3631",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.318"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL002_A1",
+                            "latitude": "-6.3612",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "9",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B1",
+                                    "relationId": "182",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400393",
+                                    "localId": "9",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "10",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B2",
+                                    "relationId": "183",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400394",
+                                    "localId": "10",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "11",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_C1",
+                                    "relationId": "184",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400395",
+                                    "localId": "11",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400391",
+                            "localId": "7",
+                            "cellAzimuth": "90",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "7",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.312",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL002_B1",
+                            "latitude": "-6.3612",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "7",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_A1",
+                                    "relationId": "191",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400391",
+                                    "localId": "7",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "10",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B2",
+                                    "relationId": "193",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400394",
+                                    "localId": "10",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "11",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_C1",
+                                    "relationId": "194",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400395",
+                                    "localId": "11",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400393",
+                            "localId": "9",
+                            "cellAzimuth": "210",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "9",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.312",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL002_B2",
+                            "latitude": "-6.3612",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "7",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_A1",
+                                    "relationId": "196",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400391",
+                                    "localId": "7",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "9",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B1",
+                                    "relationId": "198",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400393",
+                                    "localId": "9",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "11",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_C1",
+                                    "relationId": "199",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400395",
+                                    "localId": "11",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400394",
+                            "localId": "10",
+                            "cellAzimuth": "210",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "10",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.312",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL002_C1",
+                            "latitude": "-6.3612",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "7",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_A1",
+                                    "relationId": "201",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400391",
+                                    "localId": "7",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "9",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B1",
+                                    "relationId": "203",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400393",
+                                    "localId": "9",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "10",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL002_B2",
+                                    "relationId": "204",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400394",
+                                    "localId": "10",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400395",
+                            "localId": "11",
+                            "cellAzimuth": "330",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "11",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.312",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "102",
+                    "duname": "duserver102",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3612",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.312"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL003_A1",
+                            "latitude": "-6.3557",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "15",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B1",
+                                    "relationId": "252",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400399",
+                                    "localId": "15",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "16",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B2",
+                                    "relationId": "253",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400400",
+                                    "localId": "16",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "17",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_C1",
+                                    "relationId": "254",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400401",
+                                    "localId": "17",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400397",
+                            "localId": "13",
+                            "cellAzimuth": "0",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "13",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.332",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL003_B1",
+                            "latitude": "-6.3557",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "13",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_A1",
+                                    "relationId": "261",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400397",
+                                    "localId": "13",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "16",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B2",
+                                    "relationId": "263",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400400",
+                                    "localId": "16",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "17",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_C1",
+                                    "relationId": "264",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400401",
+                                    "localId": "17",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400399",
+                            "localId": "15",
+                            "cellAzimuth": "120",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "15",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.332",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL003_B2",
+                            "latitude": "-6.3557",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "13",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_A1",
+                                    "relationId": "266",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400397",
+                                    "localId": "13",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "15",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B1",
+                                    "relationId": "268",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400399",
+                                    "localId": "15",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "17",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_C1",
+                                    "relationId": "269",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400401",
+                                    "localId": "17",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400400",
+                            "localId": "16",
+                            "cellAzimuth": "120",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "16",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.332",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL003_C1",
+                            "latitude": "-6.3557",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "13",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_A1",
+                                    "relationId": "271",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400397",
+                                    "localId": "13",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "15",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B1",
+                                    "relationId": "273",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400399",
+                                    "localId": "15",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "16",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL003_B2",
+                                    "relationId": "274",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400400",
+                                    "localId": "16",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400401",
+                            "localId": "17",
+                            "cellAzimuth": "240",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "17",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.332",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "103",
+                    "duname": "duserver103",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3557",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.332"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL004_A1",
+                            "latitude": "-6.3441",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "21",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B1",
+                                    "relationId": "322",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400405",
+                                    "localId": "21",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "22",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B2",
+                                    "relationId": "323",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400406",
+                                    "localId": "22",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "23",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_C1",
+                                    "relationId": "324",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400407",
+                                    "localId": "23",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400403",
+                            "localId": "19",
+                            "cellAzimuth": "45",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "19",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.314",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL004_B1",
+                            "latitude": "-6.3441",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "19",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_A1",
+                                    "relationId": "331",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400403",
+                                    "localId": "19",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "22",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B2",
+                                    "relationId": "333",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400406",
+                                    "localId": "22",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "23",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_C1",
+                                    "relationId": "334",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400407",
+                                    "localId": "23",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400405",
+                            "localId": "21",
+                            "cellAzimuth": "165",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "21",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.314",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL004_B2",
+                            "latitude": "-6.3441",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "19",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_A1",
+                                    "relationId": "336",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400403",
+                                    "localId": "19",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "21",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B1",
+                                    "relationId": "338",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400405",
+                                    "localId": "21",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "23",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_C1",
+                                    "relationId": "339",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400407",
+                                    "localId": "23",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400406",
+                            "localId": "22",
+                            "cellAzimuth": "165",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "22",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.314",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL004_C1",
+                            "latitude": "-6.3441",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "19",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_A1",
+                                    "relationId": "341",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400403",
+                                    "localId": "19",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "21",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B1",
+                                    "relationId": "343",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400405",
+                                    "localId": "21",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "22",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL004_B2",
+                                    "relationId": "344",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400406",
+                                    "localId": "22",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400407",
+                            "localId": "23",
+                            "cellAzimuth": "285",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "23",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.314",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "104",
+                    "duname": "duserver104",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3441",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.314"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL005_A1",
+                            "latitude": "-6.343",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "27",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B1",
+                                    "relationId": "392",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400411",
+                                    "localId": "27",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "28",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B2",
+                                    "relationId": "393",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400412",
+                                    "localId": "28",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "29",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_C1",
+                                    "relationId": "394",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400413",
+                                    "localId": "29",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400409",
+                            "localId": "25",
+                            "cellAzimuth": "10",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "25",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.324",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL005_B1",
+                            "latitude": "-6.343",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "25",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_A1",
+                                    "relationId": "401",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400409",
+                                    "localId": "25",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "28",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B2",
+                                    "relationId": "403",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400412",
+                                    "localId": "28",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "29",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_C1",
+                                    "relationId": "404",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400413",
+                                    "localId": "29",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400411",
+                            "localId": "27",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "27",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.324",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL005_B2",
+                            "latitude": "-6.343",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "25",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_A1",
+                                    "relationId": "406",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400409",
+                                    "localId": "25",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "27",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B1",
+                                    "relationId": "408",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400411",
+                                    "localId": "27",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "29",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_C1",
+                                    "relationId": "409",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400413",
+                                    "localId": "29",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400412",
+                            "localId": "28",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "28",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.324",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL005_C1",
+                            "latitude": "-6.343",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "25",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_A1",
+                                    "relationId": "411",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400409",
+                                    "localId": "25",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "27",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B1",
+                                    "relationId": "413",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400411",
+                                    "localId": "27",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "28",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL005_B2",
+                                    "relationId": "414",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400412",
+                                    "localId": "28",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400413",
+                            "localId": "29",
+                            "cellAzimuth": "250",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "29",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.324",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "105",
+                    "duname": "duserver105",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.343",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.324"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL006_A1",
+                            "latitude": "-6.3378",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "33",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B1",
+                                    "relationId": "462",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400417",
+                                    "localId": "33",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "34",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B2",
+                                    "relationId": "463",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400418",
+                                    "localId": "34",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "35",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_C1",
+                                    "relationId": "464",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400419",
+                                    "localId": "35",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400415",
+                            "localId": "31",
+                            "cellAzimuth": "350",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "31",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL006_B1",
+                            "latitude": "-6.3378",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "31",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_A1",
+                                    "relationId": "471",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400415",
+                                    "localId": "31",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "34",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B2",
+                                    "relationId": "473",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400418",
+                                    "localId": "34",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "35",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_C1",
+                                    "relationId": "474",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400419",
+                                    "localId": "35",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400417",
+                            "localId": "33",
+                            "cellAzimuth": "110",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "33",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL006_B2",
+                            "latitude": "-6.3378",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "31",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_A1",
+                                    "relationId": "476",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400415",
+                                    "localId": "31",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "33",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B1",
+                                    "relationId": "478",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400417",
+                                    "localId": "33",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "35",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_C1",
+                                    "relationId": "479",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400419",
+                                    "localId": "35",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400418",
+                            "localId": "34",
+                            "cellAzimuth": "110",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "34",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL006_C1",
+                            "latitude": "-6.3378",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "31",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_A1",
+                                    "relationId": "481",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400415",
+                                    "localId": "31",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "33",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B1",
+                                    "relationId": "483",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400417",
+                                    "localId": "33",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "34",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL006_B2",
+                                    "relationId": "484",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400418",
+                                    "localId": "34",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400419",
+                            "localId": "35",
+                            "cellAzimuth": "230",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "35",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "106",
+                    "duname": "duserver106",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3378",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.334"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL007_A1",
+                            "latitude": "-6.3321",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "39",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B1",
+                                    "relationId": "532",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400423",
+                                    "localId": "39",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "40",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B2",
+                                    "relationId": "533",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400424",
+                                    "localId": "40",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "41",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_C1",
+                                    "relationId": "534",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400425",
+                                    "localId": "41",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400421",
+                            "localId": "37",
+                            "cellAzimuth": "5",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "37",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.329",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL007_B1",
+                            "latitude": "-6.3321",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "37",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_A1",
+                                    "relationId": "541",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400421",
+                                    "localId": "37",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "40",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B2",
+                                    "relationId": "543",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400424",
+                                    "localId": "40",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "41",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_C1",
+                                    "relationId": "544",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400425",
+                                    "localId": "41",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400423",
+                            "localId": "39",
+                            "cellAzimuth": "125",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "39",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.329",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL007_B2",
+                            "latitude": "-6.3321",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "37",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_A1",
+                                    "relationId": "546",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400421",
+                                    "localId": "37",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "39",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B1",
+                                    "relationId": "548",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400423",
+                                    "localId": "39",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "41",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_C1",
+                                    "relationId": "549",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400425",
+                                    "localId": "41",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400424",
+                            "localId": "40",
+                            "cellAzimuth": "125",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "40",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.329",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL007_C1",
+                            "latitude": "-6.3321",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "37",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_A1",
+                                    "relationId": "551",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400421",
+                                    "localId": "37",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "39",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B1",
+                                    "relationId": "553",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400423",
+                                    "localId": "39",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "40",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL007_B2",
+                                    "relationId": "554",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400424",
+                                    "localId": "40",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400425",
+                            "localId": "41",
+                            "cellAzimuth": "245",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "41",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.329",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "107",
+                    "duname": "duserver107",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3321",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.329"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL008_A1",
+                            "latitude": "-6.3319",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "45",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B1",
+                                    "relationId": "602",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400429",
+                                    "localId": "45",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "46",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B2",
+                                    "relationId": "603",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400430",
+                                    "localId": "46",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "47",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_C1",
+                                    "relationId": "604",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400431",
+                                    "localId": "47",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400427",
+                            "localId": "43",
+                            "cellAzimuth": "60",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "43",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.317",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL008_B1",
+                            "latitude": "-6.3319",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "43",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_A1",
+                                    "relationId": "611",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400427",
+                                    "localId": "43",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "46",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B2",
+                                    "relationId": "613",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400430",
+                                    "localId": "46",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "47",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_C1",
+                                    "relationId": "614",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400431",
+                                    "localId": "47",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400429",
+                            "localId": "45",
+                            "cellAzimuth": "180",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "45",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.317",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL008_B2",
+                            "latitude": "-6.3319",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "43",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_A1",
+                                    "relationId": "616",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400427",
+                                    "localId": "43",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "45",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B1",
+                                    "relationId": "618",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400429",
+                                    "localId": "45",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "47",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_C1",
+                                    "relationId": "619",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400431",
+                                    "localId": "47",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400430",
+                            "localId": "46",
+                            "cellAzimuth": "180",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "46",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.317",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL008_C1",
+                            "latitude": "-6.3319",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "43",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_A1",
+                                    "relationId": "621",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400427",
+                                    "localId": "43",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "45",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B1",
+                                    "relationId": "623",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400429",
+                                    "localId": "45",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "46",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL008_B2",
+                                    "relationId": "624",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400430",
+                                    "localId": "46",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400431",
+                            "localId": "47",
+                            "cellAzimuth": "300",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "47",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.317",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "108",
+                    "duname": "duserver108",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3319",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.317"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL009_A1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B1",
+                                    "relationId": "672",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400435",
+                                    "localId": "51",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B2",
+                                    "relationId": "673",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400436",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_C1",
+                                    "relationId": "674",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400437",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400433",
+                            "localId": "49",
+                            "cellAzimuth": "10",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "49",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL009_B1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_A1",
+                                    "relationId": "681",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400433",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B2",
+                                    "relationId": "683",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400436",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_C1",
+                                    "relationId": "684",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400437",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400435",
+                            "localId": "51",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "51",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL009_B2",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_A1",
+                                    "relationId": "686",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400433",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B1",
+                                    "relationId": "688",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400435",
+                                    "localId": "51",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_C1",
+                                    "relationId": "689",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400437",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400436",
+                            "localId": "52",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "52",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL009_C1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_A1",
+                                    "relationId": "691",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400433",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B1",
+                                    "relationId": "693",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400435",
+                                    "localId": "51",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL009_B2",
+                                    "relationId": "694",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400436",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400437",
+                            "localId": "53",
+                            "cellAzimuth": "250",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "53",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "109",
+                    "duname": "duserver109",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3301",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.321"
+                },
+                "type": "du"
+            }
+        },
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL010_A1",
+                            "latitude": "-6.3266",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "57",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B1",
+                                    "relationId": "42",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400441",
+                                    "localId": "57",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "58",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B2",
+                                    "relationId": "43",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400442",
+                                    "localId": "58",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "59",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_C1",
+                                    "relationId": "44",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400443",
+                                    "localId": "59",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400439",
+                            "localId": "55",
+                            "cellAzimuth": "0",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "55",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL010_B1",
+                            "latitude": "-6.3266",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "55",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_A1",
+                                    "relationId": "51",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400439",
+                                    "localId": "55",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "58",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B2",
+                                    "relationId": "53",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400442",
+                                    "localId": "58",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "59",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_C1",
+                                    "relationId": "54",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400443",
+                                    "localId": "59",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400441",
+                            "localId": "57",
+                            "cellAzimuth": "120",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "57",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL010_B2",
+                            "latitude": "-6.3266",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "55",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_A1",
+                                    "relationId": "56",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400439",
+                                    "localId": "55",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "57",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B1",
+                                    "relationId": "58",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400441",
+                                    "localId": "57",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "59",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_C1",
+                                    "relationId": "59",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400443",
+                                    "localId": "59",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400442",
+                            "localId": "58",
+                            "cellAzimuth": "120",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "58",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL010_C1",
+                            "latitude": "-6.3266",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "55",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_A1",
+                                    "relationId": "61",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400439",
+                                    "localId": "55",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "57",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B1",
+                                    "relationId": "63",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400441",
+                                    "localId": "57",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "58",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL010_B2",
+                                    "relationId": "64",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400442",
+                                    "localId": "58",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400443",
+                            "localId": "59",
+                            "cellAzimuth": "240",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "59",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.334",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "110",
+                    "duname": "duserver110",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3266",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.334"
+                },
+                "type": "du"
+            }
+        },
+
+
+		
+
+
+
+
+        {
+            "device": {
+                "attributes": {
+                    "cells": [
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL011_A1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B1",
+                                    "relationId": "672",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400447",
+                                    "localId": "51",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B2",
+                                    "relationId": "673",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400448",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_C1",
+                                    "relationId": "674",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400449",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400445",
+                            "localId": "61",
+                            "cellAzimuth": "10",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "61",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL011_B1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_A1",
+                                    "relationId": "681",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400445",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B2",
+                                    "relationId": "683",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400448",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_C1",
+                                    "relationId": "684",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400449",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400447",
+                            "localId": "63",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "63",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL011_B2",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "39000",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_A1",
+                                    "relationId": "686",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400445",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "false",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B1",
+                                    "relationId": "688",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400447",
+                                    "localId": "51",
+                                    "isESCoveredBy": "FULL"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "53",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_C1",
+                                    "relationId": "689",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400449",
+                                    "localId": "53",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400448",
+                            "localId": "64",
+                            "cellAzimuth": "130",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "64",
+                            "arfcnDL": "428000",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "no",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        },
+                        {
+                            "energySavingState": "isNotEnergySaving",
+                            "bsChannelBwDL": "20",
+                            "cellName": "STL011_C1",
+                            "latitude": "-6.3301",
+                            "arfcnUL": "145100",
+                            "neighbours": [
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "49",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_A1",
+                                    "relationId": "691",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400445",
+                                    "localId": "49",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "51",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B1",
+                                    "relationId": "693",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400447",
+                                    "localId": "51",
+                                    "isESCoveredBy": "NO"
+                                },
+                                {
+                                    "isRemoveAllowed": "true",
+                                    "pci": "52",
+                                    "gnbId": "1001",
+                                    "adjacentNRCellRef": "STL011_B2",
+                                    "relationId": "694",
+                                    "isHOAllowed": "true",
+                                    "cellId": "10116400448",
+                                    "localId": "52",
+                                    "isESCoveredBy": "NO"
+                                }
+                            ],
+                            "cellId": "10116400449",
+                            "localId": "65",
+                            "cellAzimuth": "250",
+                            "cellState": "Active",
+                            "administrativeState": "UNLOCKED",
+                            "pci": "65",
+                            "arfcnDL": "156100",
+                            "energySavingControl": "toBeNotEnergySaving",
+                            "operationalState": "ENABLED",
+                            "isCoverageCell": "yes",
+                            "longitude": "53.321",
+                            "cesSwitch": "true"
+                        }
+                    ],
+                    "duid": "111",
+                    "duname": "duserver111",
+                    "userDefinedState": "ACTIVE",
+                    "latitude": "-6.3301",
+                    "gnbId": "1001",
+                    "vendorName": "STL-Radio",
+                    "cuups": [
+                        "10001"
+                    ],
+                    "longitude": "53.321"
+                },
+                "type": "du"
+            }
+        }
+    ]
+}

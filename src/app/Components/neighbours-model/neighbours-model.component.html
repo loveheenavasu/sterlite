@@ -1,0 +1,85 @@
+<div class=".container-fluid neighbour">
+    <div class="modal-header">
+        <h6 class="modal-title pull-left" id = 'hed' *ngIf = 'du'>{{neighbourParams.attributes.duname | uppercase}} - {{neighbourParams.attributes.duid}} </h6>    
+        <h6 class="modal-title pull-left" *ngIf = 'cells'>{{neighbourParams.attributes.cellName | uppercase}} - {{neighbourParams.attributes.cellId}} </h6>          
+        <!-- <button type="button" class="btn btn-danger pull-right" style="position: fixed;right: 10%;" (click)="modalRef.hide()">Close</button> -->
+        <button class="btn btn-danger" id = 'close' (click)="modalRef.hide()">Close</button>
+    </div> 
+
+    <!-- For Du device cells -->
+    <table class="table" *ngIf = 'du'>
+        <thead>
+            <th>S.No</th>
+            <th>cellId</th>
+            <th>cellName</th>
+            <th>cellAzimuth</th>
+            <th>bsChannelBwDL</th>
+            <th>arfcnDL</th>
+            <th>arfcnUL</th>
+            <th>administrativeState</th>
+            <th>cesSwitch</th>
+            <th>cellState</th>
+            <th>energySavingControl</th>
+            <th>energySavingState</th>
+            <th>isCoverageCell</th>
+            <th>latitude</th>
+            <th>longitude</th>
+            <th>localId</th>
+            <th>operationalState</th>
+            <th>pci</th>
+    
+        <tbody *ngFor = 'let x of neighbourParams.attributes.cells; let i = index'>
+            <td>{{i+1}}</td>
+            <td>{{x.cellId}}</td>
+            <td>{{x.cellName}}</td>
+            <td>{{x.cellAzimuth}}</td>
+            <td>{{x.bsChannelBwDL}}</td>
+            <td>{{x.arfcnDL}}</td>
+            <td>{{x.arfcnUL}}</td>
+            <td>{{x.administrativeState}}</td>
+            <td>{{x.cesSwitch}}</td>
+            <td>{{x.cellState}}</td>
+            <td>{{x.energySavingControl}}</td>
+            <td>{{x.energySavingState}}</td>
+            <td>{{x.isCoverageCell}}</td>
+            <td>{{x.latitude}}</td>
+            <td>{{x.longitude}}</td>
+            <td>{{x.localId}}</td>
+            <td>{{x.operationalState}}</td>
+            <td>{{x.pci}}</td>
+        </tbody>
+    </table>
+
+    <!-- For Du device cells -->
+    <table class="table" *ngIf = 'cells'>
+        <thead>
+            <th>S.No</th>
+            <th>adjacentNRCellRef</th>
+            <th>cellId</th>
+            <th>gnbId</th>
+            <th>isESCoveredBy</th>
+            <th>isHOAllowed</th>
+            <th>isRemoveAllowed</th>
+            <th>localId</th>
+            <th>pci</th>
+            <th>relationId</th>
+    
+        <tbody *ngFor = 'let x of neighbourParams.attributes.neighbours; let i = index'>
+            <td>{{i+1}}</td>
+            <td>{{x.adjacentNRCellRef}}</td>
+            <td>{{x.cellId}}</td>
+            <td>{{x.gnbId}}</td>
+            <td>{{x.isESCoveredBy}}</td>
+            <td>{{x.isHOAllowed}}</td>
+            <td>{{x.isRemoveAllowed}}</td>
+            <td>{{x.localId}}</td>
+            <td>{{x.pci}}</td>
+            <td>{{x.relationId}}</td>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+

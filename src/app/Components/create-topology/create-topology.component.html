@@ -1,0 +1,74 @@
+<div id="my_dataviz"></div>
+<div style="position: fixed; top: 16px; right: 16px">
+  <button class="btn btn-primary" (click)="handleSubmit()">Submit</button>
+</div>
+<div class="main-wrapper">
+  <h4 *ngIf="extraCells.length > 0" class="fw-bolder mt-5 text-center">
+    Extra cells
+  </h4>
+  <div class="d-flex justify-content-around mt-2 pt-5">
+    <span
+      class="openDeviceModal"
+      (click)="openDeviceModal(cell)"
+      *ngFor="let cell of extraCells"
+      [id]="cell?.cellId"
+    >
+      <img
+        class="cursor-pointer"
+        width="32"
+        [src]="cell.image"
+        [alt]="cell.type"
+      />
+    </span>
+  </div>
+
+  <!-- <div>
+    <div class="d-flex justify-content-between w-100 mt-5 pt-5">
+      <span *ngFor="let cuup of cuups" (click)="openDeviceModal(cuup)">
+        <img width="64" [src]="cuup.device.image" [alt]="cuup.type" />
+      </span>
+      <span *ngFor="let cucp of cucps" (click)="openDeviceModal(cucp)">
+        <img width="64" [src]="cucp.device.image" [alt]="cucp.type" />
+      </span>
+    </div>
+    <div class="d-flex justify-content-around mt-5 pt-5">
+      <span
+        *ngFor="let du of dus"
+        [id]="du?.device?.attributes?.duid"
+        (click)="openDeviceModal(du)"
+      >
+        <img width="64" [src]="du.device.image" [alt]="du.type" />
+      </span>
+    </div>
+    <div class="d-flex justify-content-around mt-5 pt-5">
+      <div
+        class="d-flex flex-column align-items-center"
+        *ngFor="let cell of cells"
+      >
+        <span [id]="cell?.cellId" (click)="openDeviceModal(cell)">
+          <img width="64" [src]="cell.image" [alt]="cell.type" />
+        </span>
+        <span class="device-name">{{ cell?.cellName }}</span>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="wrapper">
+    <div class="content">
+      <ul class="menu" style="z-index: 0">
+        <li class="item" (click)="imageLoader(CUCPUrl)">
+          <span>Create CUCP</span>
+        </li>
+        <li class="item" (click)="imageLoader(CUUPUrl)">
+          <span>Create CUUP</span>
+        </li>
+        <li class="item" (click)="imageLoader(DUUrl)">
+          <span>Create DU</span>
+        </li>
+        <li class="item" (click)="imageLoader(CELLUrl)">
+          <span>Create CELL</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

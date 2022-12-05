@@ -1,0 +1,87 @@
+// Context Menu for the click event
+
+.main-wrapper {
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.wrapper {
+  z-index: 1;
+  position: absolute;
+  visibility: hidden;
+  width: 300px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.1);
+}
+
+.wrapper .menu {
+  padding: 10px 12px;
+}
+
+.openDeviceModal {
+  z-index: 1;
+}
+
+.content .item {
+  list-style: none;
+  font-size: 22px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  cursor: pointer;
+  padding: 0 5px 0 10px;
+  border-radius: 5px;
+  margin-bottom: 2px;
+  // background: #f2f2f2; 
+}
+
+.content .item:hover {
+  background: #f2f2f2;
+}
+
+.content .item span {
+  font-size: 19px;
+  margin-left: 8px;
+}
+
+.content .setting {
+  display: flex;
+  margin-top: -5px;
+  padding: 5px 12px;
+  border-top: 1px solid blue;
+}
+
+.content .share {
+  position: relative;
+  justify-content: space-between;
+}
+
+.share .share-menu {
+  position: absolute;
+  background: #fff;
+  width: 200px;
+  right: -200px;
+  top: -35px;
+  padding: 13px;
+  opacity: 0;
+  pointer-events: none;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.08);
+  transition: 0.2s ease;
+}
+
+.share:hover .share-menu {
+  opacity: 1;
+  pointer-events: auto;
+
+}
+
+.device-name {
+  font-size: 18px;
+  font-weight: bold;
+  color: blueviolet;
+}

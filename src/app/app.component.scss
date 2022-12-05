@@ -1,0 +1,48 @@
+//For the top menu bar
+// .app-wrapper{
+//     padding-top: 120px;
+// }
+
+
+//For the side nav bar
+.app-root{
+    display: flex;
+    height: 100vh;;
+    .app-wrapper{
+        height: 100vh;
+        width: 100%;
+    }
+    position: relative;
+}
+
+// // For the image on the top right fixed position
+// .navImage {
+//     position: fixed;
+//     right: 50px;
+//     cursor: pointer;
+//   }
+
+// // For the image on the bottom left fixed position
+// .navImage {
+//     position: absolute;
+//     bottom: 2%;
+//     cursor: pointer;
+//     margin-left:0.5%;
+//     margin-bottom:3%;
+//   }
+
+// For the image on the top right fixed position
+.googleNavImage {
+    position : fixed;
+    bottom: 3%;
+    left: 1%;
+  }
+
+  .cloudNavImage {
+    position : fixed;
+    bottom: 10%;
+    left: 1%;
+  }
+
+
+

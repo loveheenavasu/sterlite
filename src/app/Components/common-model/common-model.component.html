@@ -1,0 +1,206 @@
+<div class="modal-header">
+  <h6 class="modal-title pull-left">{{nodeParams.name | uppercase}} - {{nodeParams.id}} </h6>
+  <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
+<!-- For CUCP Devvice's -->
+<table class="table" *ngIf='cucp'>
+  <tbody>
+    <tr>
+      <th>cucpid</th>
+      <td>{{nodeParams.attributes.cucpid}}</td>
+    </tr>
+    <tr>
+      <th>cucpname</th>
+      <td>{{nodeParams.attributes.cucpname}}</td>
+    </tr>
+    <tr>
+      <th>gnbId</th>
+      <td>{{nodeParams.attributes.gnbId}}</td>
+    </tr>
+    <tr>
+      <th>latitude</th>
+      <td>{{nodeParams.attributes.latitude}}</td>
+    </tr>
+    <tr>
+      <th>longitude</th>
+      <td>{{nodeParams.attributes.longitude}}</td>
+    </tr>
+    <tr>
+      <th>pLMNId</th>
+      <td>{{nodeParams.attributes.pLMNId}}</td>
+    </tr>
+    <tr>
+      <th>userDefinedState</th>
+      <td>{{nodeParams.attributes.userDefinedState}}</td>
+    </tr>
+    <tr>
+      <th>vendorName</th>
+      <td>{{nodeParams.attributes.vendorName}}</td>
+    </tr>
+    <tr>
+      <th>xnConnections</th>
+      <td>{{nodeParams.attributes.xnConnections}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- For CUUP Devvice's -->
+<table class="table" *ngIf='cuup'>
+  <tbody>
+    <tr>
+      <th>cuupid</th>
+      <td>{{nodeParams.attributes.cuupid}}</td>
+    </tr>
+    <tr>
+      <th>gnbId</th>
+      <td>{{nodeParams.attributes.gnbId}}</td>
+    </tr>
+    <tr>
+      <th>latitude</th>
+      <td>{{nodeParams.attributes.latitude}}</td>
+    </tr>
+    <tr>
+      <th>longitude</th>
+      <td>{{nodeParams.attributes.longitude}}</td>
+    </tr>
+    <tr>
+      <th>userDefinedState</th>
+      <td>{{nodeParams.attributes.userDefinedState}}</td>
+    </tr>
+    <tr>
+      <th>vendorName</th>
+      <td>{{nodeParams.attributes.vendorName}}</td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- For DU Devvice's -->
+<table class="table" *ngIf='du'>
+  <tbody>
+    <tr>
+      <th>duid</th>
+      <td>{{nodeParams.attributes.duid}}</td>
+    </tr>
+    <tr>
+      <th>cuups</th>
+      <td>{{nodeParams.attributes.cuups}}</td>
+    </tr>
+    <tr>
+      <th>DU Name</th>
+      <td>{{nodeParams.attributes.duname}}</td>
+    </tr>
+    <tr>
+      <th>gnbId</th>
+      <td>{{nodeParams.attributes.gnbId}}</td>
+    </tr>
+    <tr>
+      <th>latitude</th>
+      <td>{{nodeParams.attributes.latitude}}</td>
+    </tr>
+    <tr>
+      <th>longitude</th>
+      <td>{{nodeParams.attributes.longitude}}</td>
+    </tr>
+    <tr>
+      <th>userDefinedState</th>
+      <td>{{nodeParams.attributes.userDefinedState}}</td>
+    </tr>
+    <tr>
+      <th>vendorName</th>
+      <td>{{nodeParams.attributes.vendorName}}</td>
+    </tr>
+    <tr>
+      <th>Cells</th>
+      <td>
+        <button class="btn btn-primary" (click)='openNeighboursOrCells()'>Cells</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- For Cells Devvice's -->
+<table class="table" *ngIf='cells'>
+  <tbody>
+    <tr>
+      <th>cellId</th>
+      <td>{{nodeParams.attributes.cellId}}</td>
+    </tr>
+    <tr>
+      <th>cellName</th>
+      <td>{{nodeParams.attributes.cellName}}</td>
+    </tr>
+    <tr>
+      <th>cellState</th>
+      <td>{{nodeParams.attributes.cellState}}</td>
+    </tr>
+    <tr>
+      <th>cellAzimuth</th>
+      <td>{{nodeParams.attributes.cellAzimuth}}</td>
+    </tr>
+    <tr>
+      <th>latitude</th>
+      <td>{{nodeParams.attributes.latitude}}</td>
+    </tr>
+    <tr>
+      <th>longitude</th>
+      <td>{{nodeParams.attributes.longitude}}</td>
+    </tr>
+    <tr>
+      <th>administrativeState</th>
+      <td>{{nodeParams.attributes.administrativeState}}</td>
+    </tr>
+    <tr>
+      <th>arfcnDL</th>
+      <td>{{nodeParams.attributes.arfcnDL}}</td>
+    </tr>
+    <tr>
+      <th>arfcnUL</th>
+      <td>{{nodeParams.attributes.arfcnUL}}</td>
+    </tr>
+    <tr>
+      <th>bsChannelBwDL</th>
+      <td>{{nodeParams.attributes.bsChannelBwDL}}</td>
+    </tr>
+    <tr>
+      <th>cesSwitch</th>
+      <td>{{nodeParams.attributes.cesSwitch}}</td>
+    </tr>
+    <tr>
+      <th>energySavingControl</th>
+      <td>{{nodeParams.attributes.energySavingControl}}</td>
+    </tr>
+    <tr>
+      <th>energySavingState</th>
+      <td>{{nodeParams.attributes.energySavingState}}</td>
+    </tr>
+    <tr>
+      <th>isCoverageCell</th>
+      <td>{{nodeParams.attributes.isCoverageCell}}</td>
+    </tr>
+    <tr>
+      <th>pci</th>
+      <td>{{nodeParams.attributes.pci}}</td>
+    </tr>
+    <tr>
+      <th>localId</th>
+      <td>{{nodeParams.attributes.localId}}</td>
+    </tr>
+    <tr>
+      <th>operationalState</th>
+      <td>{{nodeParams.attributes.operationalState}}</td>
+    </tr>
+    <tr>
+      <th>neighbours</th>
+      <td>
+        <button class="btn btn-primary" (click)='openNeighboursOrCells()'>Neighbours</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="modal-footer">
+  <button type="button" class="btn btn-danger" (click)="modalRef.hide()">Close</button>
+</div>

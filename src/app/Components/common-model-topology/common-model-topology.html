@@ -1,0 +1,1127 @@
+<div class="modal-header">
+  <h6 class="modal-title pull-left">{{serverType}}</h6>
+  <button
+    type="button"
+    class="close pull-right"
+    aria-label="Close"
+    (click)="modalRef.hide()"
+  >
+    <span aria-hidden="true">×</span>
+  </button>
+</div>
+
+<!-- For Topology Cells Device's -->
+<form [formGroup]="registerForm" (ngSubmit)="onSubmit($event)">
+  <table class="table" *ngIf="cells">
+    <tbody>
+      <tr>
+        <th>cellId</th>
+        <td>
+          <!-- <input
+            type="number"
+            name="cellId"
+            class="form-control"
+            [defaultValue]="server.device.attributes.cellId"
+            disabled
+          /> -->
+          <h6>{{server.device.attributes.cellId}}</h6>
+        </td>
+      </tr>
+      <tr>
+        <th>cellName</th>
+        <td>
+          <input
+            name="cellName"
+            formControlName="cellName"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.cellName.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.cellName.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.cellName.errors.required"
+            >
+              cellName field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>cellState</th>
+        <td>
+          <input
+            formControlName="cellState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.cellState.errors}"
+            name="cellState"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.cellState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.cellState.errors.required"
+            >
+              cellState field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>cellAzimuth</th>
+        <td>
+          <input
+            name="cellAzimuth"
+            formControlName="cellAzimuth"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.cellAzimuth.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.cellAzimuth.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.cellAzimuth.errors.required"
+            >
+              cellAzimuth field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <th>latitude</th>
+        <td>
+          <input
+            name="latitude"
+            formControlName="latitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.latitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.latitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.latitude.errors.required"
+            >
+              latitude field is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.min">
+              invalid range
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.max">
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>longitude</th>
+        <td>
+          <input
+            name="longitude"
+            formControlName="longitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.longitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.longitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.required"
+            >
+              longitude field is required
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.min"
+            >
+              invalid range
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.max"
+            >
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>administrativeState</th>
+        <td>
+          <input
+            name="administrativeState"
+            formControlName="administrativeState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.administrativeState.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.administrativeState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.administrativeState.errors.required"
+            >
+              administrativeState field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>arfcnDL</th>
+        <td>
+          <input
+            name="arfcnDL"
+            formControlName="arfcnDL"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.arfcnDL.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.arfcnDL.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.arfcnDL.errors.required"
+            >
+              arfcnDL field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>arfcnUL</th>
+        <td>
+          <input
+            name="arfcnUL"
+            formControlName="arfcnUL"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.arfcnUL.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.arfcnUL.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.arfcnUL.errors.required"
+            >
+              arfcnUL field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>bsChannelBwDL</th>
+        <td>
+          <input
+            name="bsChannelBwDL"
+            formControlName="bsChannelBwDL"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.bsChannelBwDL.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.bsChannelBwDL.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.bsChannelBwDL.errors.required"
+            >
+              bsChannelBwDL field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>cesSwitch</th>
+        <td>
+          <input
+            name="cesSwitch"
+            formControlName="cesSwitch"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.cesSwitch.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.cesSwitch.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.cesSwitch.errors.required"
+            >
+              cesSwitch field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>energySavingControl</th>
+        <td>
+          <input
+            name="energySavingControl"
+            formControlName="energySavingControl"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.energySavingControl.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.energySavingControl.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.energySavingControl.errors.required"
+            >
+              energySavingControl field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>energySavingState</th>
+        <td>
+          <input
+            name="energySavingState"
+            formControlName="energySavingState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.energySavingState.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.energySavingState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.energySavingState.errors.required"
+            >
+              energySavingState field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>isCoverageCell</th>
+        <td>
+          <input
+            name="isCoverageCell"
+            formControlName="isCoverageCell"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.isCoverageCell.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.isCoverageCell.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.isCoverageCell.errors.required"
+            >
+              isCoverageCell field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>pci</th>
+        <td>
+          <input
+            name="pci"
+            formControlName="pci"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.pci.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.pci.errors"
+            class="text-danger"
+          >
+            <div *ngIf="submitted && registerForm.controls.pci.errors.required">
+              pci field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>localId</th>
+        <td>
+          <input
+            name="localId"
+            formControlName="localId"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.localId.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.localId.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.localId.errors.required"
+            >
+              localId field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>operationalState</th>
+        <td>
+          <input
+            name="operationalState"
+            formControlName="operationalState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.operationalState.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.operationalState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.operationalState.errors.required"
+            >
+              operationalState field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <th>Select Neighbour Cells</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CELL')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let selectCell of selectCells"
+              class="mb-2 p-2"
+              [selected]="selectCell.isSelected"
+              [value]="selectCell.id"
+            >
+              {{selectCell.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <!-- For Topology CUCP Device's -->
+  <table class="table" *ngIf="cucp">
+    <tbody>
+      <tr>
+        <th>cucpid</th>
+        <td>
+          <!-- <input
+            type="number"
+            name="cucpid"
+            [defaultValue]="server.device.attributes.cucpid"
+            class="form-control"
+            disabled
+          /> -->
+          <h6>{{server.device.attributes.cucpid}}</h6>
+        </td>
+      </tr>
+      <tr>
+        <th>gnbId</th>
+        <td>
+          <h6>{{server.device.attributes.gnbId}}</h6>
+        </td>
+      </tr>
+      <tr>
+        <th>cucpname</th>
+        <td>
+          <input
+            name="cucpname"
+            formControlName="cucpname"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.cucpname.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.cucpname.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.cucpname.errors.required"
+            >
+              cucpname field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>gnbId</th>
+        <td>
+          <select
+            class="form-control"
+            (change)="handleChange($event,'GNBID')"
+            name="selectedCells"
+          >
+            <option value="none">None</option>
+            <option
+              *ngFor="let cuup of cuups"
+              class="mb-2 p-2"
+              [selected]="cuup.isSelected"
+              [value]="cuup.id"
+            >
+              {{cuup.id}}
+            </option>
+          </select>
+        </td>
+      </tr> -->
+      <tr>
+        <th>xnConnections</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CUCP')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let cucp of cucps"
+              class="mb-2 p-2"
+              [selected]="cucp.isSelected"
+              [value]="cucp.id"
+            >
+              {{cucp.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+
+      <!-- <tr>
+        <th>gnbId</th>
+        <td>
+          <input
+            name="gnbId"
+            formControlName="gnbId"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.gnbId.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.gnbId.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.gnbId.errors.required"
+            >
+              gnbId field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <th>latitude</th>
+        <td>
+          <input
+            name="latitude"
+            formControlName="latitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.latitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.latitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.latitude.errors.required"
+            >
+              latitude field is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.min">
+              invalid range
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.max">
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>longitude</th>
+        <td>
+          <input
+            name="longitude"
+            formControlName="longitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.longitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+
+          <div
+            *ngIf="submitted && registerForm.controls.longitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.required"
+            >
+              longitude field is required
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.min"
+            >
+              invalid range
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.max"
+            >
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>pLMNId</th>
+        <td>
+          <input
+            name="pLMNId"
+            formControlName="pLMNId"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.pLMNId.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.pLMNId.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.pLMNId.errors.required"
+            >
+              pLMNId field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>userDefinedState</th>
+        <td>
+          <input
+            name="userDefinedState"
+            formControlName="userDefinedState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.userDefinedState.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.userDefinedState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.userDefinedState.errors.required"
+            >
+              userDefinedState field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>vendorName</th>
+        <td>
+          <input
+            name="vendorName"
+            formControlName="vendorName"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.vendorName.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.vendorName.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.vendorName.errors.required"
+            >
+              vendorName field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <!-- <tr>
+        <th>xnConnections</th>
+        <td>
+          <input
+            name="xnConnections"
+            formControlName="xnConnections"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.xnConnections.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.xnConnections.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.xnConnections.errors.required"
+            >
+              xnConnections field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+
+  <!-- For Topology CUUP Device's -->
+  <table class="table" *ngIf="cuup">
+    <tbody>
+      <tr>
+        <th>cuupid</th>
+        <td>
+          <!-- <input
+            type="number"
+            name="cuupid"
+            class="form-control"
+            [defaultValue]="server.device.attributes.cuupid"
+            disabled
+          /> -->
+          <h6>{{server.device.attributes.cuupid}}</h6>
+        </td>
+      </tr>
+      <tr>
+        <th>gnbId</th>
+        <td>
+          <select
+            class="form-control"
+            (change)="handleChange($event,'GNBID')"
+            name="selectedCells"
+          >
+            <option value="none">None</option>
+            <option
+              *ngFor="let gnbID of gnbIDs"
+              class="mb-2 p-2"
+              [selected]="gnbID.isSelected"
+              [value]="gnbID.id"
+            >
+              {{gnbID.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>cuups</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CUUP')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let cuup of cuups"
+              class="mb-2 p-2"
+              [selected]="cuup.isSelected"
+              [value]="cuup.id"
+            >
+              {{cuup.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>latitude</th>
+        <td>
+          <input
+            name="latitude"
+            formControlName="latitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.latitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.latitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.latitude.errors.required"
+            >
+              latitude field is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.min">
+              invalid range
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.max">
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>longitude</th>
+        <td>
+          <input
+            name="longitude"
+            formControlName="longitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.longitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.longitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.required"
+            >
+              longitude field is required
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.min"
+            >
+              invalid range
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.max"
+            >
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>userDefinedState</th>
+        <td>
+          <input
+            name="userDefinedState"
+            formControlName="userDefinedState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.userDefinedState.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.userDefinedState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.userDefinedState.errors.required"
+            >
+              userDefinedState field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>vendorName</th>
+        <td>
+          <input
+            name="vendorName"
+            formControlName="vendorName"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.vendorName.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.vendorName.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.vendorName.errors.required"
+            >
+              vendorName field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+    </tbody>
+  </table>
+
+  <!-- For Topology DU Device's -->
+  <table class="table" *ngIf="du">
+    <tbody>
+      <tr>
+        <th>duid</th>
+        <td>
+          <!-- <input
+            type="number"
+            name="duid"
+            class="form-control"
+            [defaultValue]="server.device.attributes.duid"
+            disabled
+          /> -->
+          <h6>{{server.device.attributes.duid}}</h6>
+        </td>
+      </tr>
+      <tr>
+        <th>cuups</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CUUP')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let cuup of cuups"
+              class="mb-2 p-2"
+              [selected]="cuup.isSelected"
+              [value]="cuup.id"
+            >
+              {{cuup.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>cucps</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CUCP')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let cucp of cucps"
+              class="mb-2 p-2"
+              [selected]="cucp.isSelected"
+              [value]="cucp.id"
+            >
+              {{cucp.id}}
+            </option>
+          </select>
+        </td>
+      </tr> -->
+      <tr>
+        <th>gnbId</th>
+        <td>
+          <select
+            class="form-control"
+            (change)="handleChange($event,'GNBID')"
+            name="selectedCells"
+          >
+            <option value="none">None</option>
+            <option
+              *ngFor="let gnbID of gnbIDs"
+              class="mb-2 p-2"
+              [selected]="gnbID.isSelected"
+              [value]="gnbID.id"
+            >
+              {{gnbID.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <th>DU Name</th>
+        <td>
+          <input
+            name="duName"
+            formControlName="duName"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.duName.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.duName.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.duName.errors.required"
+            >
+              DU Name field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>gnbId</th>
+        <td>
+          <input
+            name="gnbId"
+            formControlName="gnbId"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.gnbId.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.gnbId.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.gnbId.errors.required"
+            >
+              gnbId field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <th>latitude</th>
+        <td>
+          <input
+            name="latitude"
+            formControlName="latitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.latitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.latitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.latitude.errors.required"
+            >
+              latitude field is required
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.min">
+              invalid range
+            </div>
+            <div *ngIf="submitted && registerForm.controls.latitude.errors.max">
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>longitude</th>
+        <td>
+          <input
+            name="longitude"
+            formControlName="longitude"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.longitude.errors}"
+            type="number"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.longitude.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.required"
+            >
+              longitude field is required
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.min"
+            >
+              invalid range
+            </div>
+            <div
+              *ngIf="submitted && registerForm.controls.longitude.errors.max"
+            >
+              invalid range
+            </div>
+          </div>
+        </td>
+      </tr>
+      <!-- <tr>
+        <th>userDefinedState</th>
+        <td>
+          <input
+            name="userDefinedState"
+            formControlName="userDefinedState"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.userDefinedState.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.userDefinedState.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.userDefinedState.errors.required"
+            >
+              userDefinedState field is required
+            </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <th>vendorName</th>
+        <td>
+          <input
+            name="vendorName"
+            formControlName="vendorName"
+            [ngClass]="{'is-invalid':submitted && registerForm.controls.vendorName.errors}"
+            type="text"
+            class="form-control"
+            required
+          />
+          <div
+            *ngIf="submitted && registerForm.controls.vendorName.errors"
+            class="text-danger"
+          >
+            <div
+              *ngIf="submitted && registerForm.controls.vendorName.errors.required"
+            >
+              vendorName field is required
+            </div>
+          </div>
+        </td>
+      </tr> -->
+      <tr>
+        <th>Select Cells</th>
+        <td>
+          <select
+            class="form-control"
+            multiple
+            (change)="handleChange($event,'CELL')"
+            name="selectedCells"
+          >
+            <option
+              *ngFor="let selectCell of selectCells"
+              class="mb-2 p-2"
+              [selected]="selectCell.isSelected"
+              [value]="selectCell.id"
+            >
+              {{selectCell.id}}
+            </option>
+          </select>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="modal-footer">
+    <button type="submit" class="btn btn-primary">Save</button>
+    <button type="button" class="btn btn-danger" (click)="modalRef.hide()">
+      Close
+    </button>
+  </div>
+</form>

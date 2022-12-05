@@ -1,0 +1,42 @@
+<app-top-menu-bar></app-top-menu-bar>
+<!-- sidebar width =   -->
+<div class="app-root">
+  <app-side-nav-bar></app-side-nav-bar>
+  <div class="app-wrapper">
+    <router-outlet></router-outlet>
+  </div>
+  
+  <!-- Image navigation -->
+  <div>
+    <div *ngIf="!isGoogleView" [ngClass]="{'cloudNavImage' : true}">
+      <button style="padding: 0;border: 2px solid black;border-radius: 10px;margin-top: 20px;">
+      <img src="../assets/Images/OIP (2).png" 
+        alt="Google Map" width="70" height="70"
+        style="border-radius: 10px;"
+        [routerLink]="'/google-map'" (click)= "googleViewClick()" 
+      >
+    </button>
+      <h6
+      [ngClass]="{
+        'text-dark': !isGoogleView,
+        'font-weight-bolder': !isGoogleView
+      }"
+      >Google view</h6>
+    </div>
+    <div *ngIf="!isCloudView" [ngClass]="{'googleNavImage' : true}">
+      <button style="padding: 0;border: 2px solid black;border-radius: 10px;margin-top: 20px;">
+      <img src="../assets/Images/external-cloud-technologies-disruption-flat-wichaiwi.png" 
+        alt="Cloud" width="70" height="70" 
+        [routerLink]="'/d3'" (click)= "cloudViewClick()"
+      >
+    </button>
+      <h6
+       [ngClass]="{
+        'text-light': !isCloudView,
+        'font-weight-bolder': !isCloudView
+      }"
+      >Cloud view</h6>
+    </div>  
+  </div>
+</div>
+

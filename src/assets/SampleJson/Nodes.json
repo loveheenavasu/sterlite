@@ -1,0 +1,60 @@
+  {
+    "nodes": [
+      {
+        "id": 30001,
+        "name": "duid"
+      },
+      {
+        "id": 1001,
+        "name": "cucpserver1"
+      },
+      {
+        "id": 1002,
+        "name": "cucpserver2"
+      },
+      {
+        "id": 20001,
+        "name": "cuup"
+      },
+      {
+        "id": 40401016400385,
+        "name": "STL010_A1"
+      },
+      {
+        "id": 40401016400386,
+        "name": "STL010_A2"
+      }
+    ],
+    "links": [
+  
+      {
+        "source": 30001,
+        "target": 1001
+      },
+      {
+        "source": 30001,
+        "target": 20001
+      },
+      {
+        "source": 30001,
+        "target": 40401016400385
+      },
+  
+      {
+        "source": 30001,
+        "target": 40401016400386
+      },
+      {
+        "source": 40401016400385,
+        "target": 40401016400386
+      },
+      {
+        "source": 20001,
+        "target": 1001
+      },
+       {
+        "source": 1001,
+        "target": 1002
+      }
+    ]
+  }
